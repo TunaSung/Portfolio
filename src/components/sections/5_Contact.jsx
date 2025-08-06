@@ -5,7 +5,7 @@ function Contact() {
     <section id="contact">
       <Hero bgc="#18212F">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-8 h-15 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Let's Work Together
           </h2>
           <p className="text-xl text-gray-300 mb-12">
