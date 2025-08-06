@@ -16,10 +16,12 @@
     }
 }
 
+/* container */
 .container-mid {
     @apply w-[75%] max-lg:w-[90%] max-md:w-[98%] mx-auto px-4 
 }
 
+/* font */
 @layer utilities {
     .font-orbitron {
         font-family: "Orbitron", sans-serif;
