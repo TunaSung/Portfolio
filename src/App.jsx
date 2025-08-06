@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import './App.css'
 import { motion, useScroll, useTransform  } from 'framer-motion'
-import LoadingScreen from './components/loadingScreen'
+import LoadingScreen from './components/LoadingScreen'
 import Navbar from './components/Navbar'
 import Home from './components/sections/1_Home'
 import About from './components/sections/2_About'
