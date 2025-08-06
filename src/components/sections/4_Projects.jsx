@@ -44,8 +44,8 @@ function Projects() {
         "Dark‑themed interactive portfolio with scroll animations, smooth navigation, and responsive layout.",
       tech: ["React", "Tailwind", "Responsive Design", "Vercel"],
       gradient: "from-cyan-500 to-blue-600",
-      demoUrl: '',
-      githubUrl: ''
+      demoUrl: 'https://portfolio-blue-three-i9wkudfxhn.vercel.app/',
+      githubUrl: 'https://github.com/TunaSung/Portfolio'
     },
   ];
 
