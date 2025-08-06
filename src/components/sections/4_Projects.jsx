@@ -5,25 +5,25 @@ function Projects() {
     {
       title: "E-Commerce Platform",
       description:
-        "Full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Railway"],
-      gradient: "from-blue-500 to-purple-600",
-      demoUrl: 'https://firstproject-production-700b.up.railway.app',
-      githubUrl: 'https://github.com/TunaSung/First_project'
-    },
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Collaborative task management tool with real-time updates and team features.",
+        "Real-time e-commerce platform with chat system and advanced product flow.",
       tech: ["React", "Tailwind", "Node.js", "MySQL", "Socket.io", "Railway"],
       gradient: "from-green-500 to-blue-600",
       demoUrl: 'https://secondproject-production.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/Second_project'
     },
     {
+      title: "E-Commerce Platform",
+      description:
+        "Full-stack online store with user auth, shopping cart, and payment system.",
+      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Railway"],
+      gradient: "from-blue-500 to-purple-600",
+      demoUrl: 'https://firstproject-production-700b.up.railway.app',
+      githubUrl: 'https://github.com/TunaSung/First_project'
+    },
+    {
       title: "Rimoo cafe",
       description:
-        "Modern chat interface with AI integration and beautiful animations.",
+        "Single-page café website with handcrafted HTML/CSS and responsive design.",
       tech: ["HTML", "Responsive Design", "GitHub Pages"],
       gradient: "from-purple-500 to-pink-600",
       demoUrl: 'https://tunasung.github.io/Rimoo-cafe/',
@@ -32,7 +32,7 @@ function Projects() {
     {
       title: "Tubame",
       description:
-        "Responsive portfolio website with smooth animations and modern design.",
+        "Business landing page built with React, animations, BEM CSS, and full RWD.",
       tech: ["React", "Responsive Design", "Vercel"],
       gradient: "from-orange-500 to-red-600",
       demoUrl: 'https://tubame.vercel.app/',
@@ -41,8 +41,8 @@ function Projects() {
     {
       title: "Portfolio",
       description:
-        "Beautiful weather dashboard with location-based forecasts and charts.",
-      tech: ["React", "Tailwind", "Responsive Design"],
+        "Dark‑themed interactive portfolio with scroll animations, smooth navigation, and responsive layout.",
+      tech: ["React", "Tailwind", "Responsive Design", "Vercel"],
       gradient: "from-cyan-500 to-blue-600",
       demoUrl: '',
       githubUrl: ''
@@ -62,9 +62,8 @@ function Projects() {
                 key={project.title}
                 className="group relative bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 hover:shadow-2xl"
               >
-                <div
-                  className={`h-48 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-opacity`}
-                ></div>
+                <div className={`h-48 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3 text-gray-300 group-hover:text-blue-400 transition-colors">
                     {project.title}
