@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer base{
+    *{
+        @apply relative box-border scroll-smooth
+    }
+    h1,h2,h3,h4,h5,h6,p,ul {
+      @apply m-0
+    }
+    ul {
+      @apply p-0
+    }
+    button{
+        @apply cursor-pointer
+    }
+}
+
+.container-mid {
+    @apply w-[75%] max-lg:w-[90%] max-md:w-[98%] mx-auto px-4 
+}
+
+@layer utilities {
+    .font-orbitron {
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+/* background */
+@layer components {
+    .bg-cover-set {
+        @apply bg-cover bg-no-repeat bg-center
+    }
+    .bg-contain-set {
+        @apply bg-contain bg-no-repeat bg-center
+    }
+}
