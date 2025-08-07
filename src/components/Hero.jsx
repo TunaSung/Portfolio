@@ -1,6 +1,6 @@
 function Hero({children, bgc}){
     return(
-        <div className="w-full py-20 2xl:py-40"
+        <div className="w-full py-20 max-sm:py-10"
         style={{backgroundColor: bgc}}>
             {children}
         </div>
