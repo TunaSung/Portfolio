@@ -74,7 +74,7 @@ function HamburgerMenu({ sectionList }) {
               <a
                 key={`menu_${section}`}
                 className="text-center text-lg font-bold py-3 border-b last:border-0 group-hover:text-white
-                max-sm:text-sm"
+                max-sm:text-lg"
                 href={`#${section.toLowerCase()}`}
                 role="menuitem"
                 onClick={handleMenuOpen}
