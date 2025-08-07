@@ -3,7 +3,7 @@ import Hero from "../Hero";
 function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "E-Commerce_1 Platform",
       description:
         "Real-time e-commerce platform with chat system and advanced product flow.",
       tech: ["React", "Tailwind", "Node.js", "MySQL", "Socket.io", "Railway"],
@@ -12,7 +12,7 @@ function Projects() {
       githubUrl: 'https://github.com/TunaSung/Second_project'
     },
     {
-      title: "E-Commerce Platform",
+      title: "E-Commerce_2 Platform",
       description:
         "Full-stack online store with user auth, shopping cart, and payment system.",
       tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Railway"],
@@ -52,8 +52,9 @@ function Projects() {
   return (
     <section id="projects">
       <Hero bgc={"#111827"}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center h-15 mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="container-mid">
+          <h2 className="text-4xl font-bold text-center h-15 mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
+          max-sm:text-2xl max-sm:mb-4">
             Featured Projects
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

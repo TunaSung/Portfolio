@@ -3,7 +3,8 @@ import Typewriter from 'typewriter-effect';
 function LoadingScreen() {
     return (
         <div className="w-screen h-screen fixed inset-0 bg-[#121435] flex justify-center items-center">
-            <h1 className="text-4xl text-[#D35EF4] font-orbitron">
+            <h1 className="text-4xl text-[#D35EF4] font-orbitron
+            max-sm:text-lg">
                 <Typewriter
                     onInit={(typewriter) => {
                     typewriter

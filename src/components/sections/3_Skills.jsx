@@ -63,11 +63,12 @@ function Skills() {
   return (
     <section id="skills">
       <Hero bgc={"#18212F"}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl 2xl:text-6xl font-bold h-15 text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+        <div className="container-mid">
+          <h2 className="text-4xl font-bold h-15 text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
+          max-sm:text-2xl max-sm:mb-4">
             Skills & Technologies
           </h2>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-4 gap-8 max-sm:grid-cols-2">
             {skills.map((skill, index) => (
               <div key={skill.name} className="text-center group">
                 <div className="relative w-24 h-24 mx-auto mb-4">
