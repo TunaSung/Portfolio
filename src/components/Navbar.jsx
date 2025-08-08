@@ -22,11 +22,14 @@ function Navbar(){
     return(
         <motion.nav className={`z-50 fixed top-0 right-0 w-full h-16 transition-all duration-350
             ${scrolled ? 'bg-[#0B1121] shadow-md backdrop-blur-md' : 'bg-transparent'}
-            max-sm:h-20
-        `}>
+            max-sm:h-20 
+            max-md:h-25`}
+            >
             <div className="container-mid h-full flex justify-between">
                 <a href='#home' className="h-full text-2xl flex justify-center items-center font-bold bg-linear-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent
-                max-sm:text-md">
+                max-sm:text-xl
+                max-md:text-4xl"
+                >
                     Portfolio
                 </a>
 

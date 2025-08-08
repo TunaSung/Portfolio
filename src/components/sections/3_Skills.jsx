@@ -65,10 +65,11 @@ function Skills() {
       <Hero bgc={"#18212F"}>
         <div className="container-mid">
           <h2 className="text-4xl font-bold h-15 text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
-          max-sm:text-2xl max-sm:mb-4">
+          max-sm:text-2xl max-sm:mb-4
+          max-md:text-4xl">
             Skills & Technologies
           </h2>
-          <div className="grid grid-cols-4 gap-8 max-sm:grid-cols-2">
+          <div className="grid grid-cols-4 gap-8 max-sm:grid-cols-2 max-md:grid-cols-3">
             {skills.map((skill, index) => (
               <div key={skill.name} className="text-center group">
                 <div className="relative w-24 h-24 mx-auto mb-4">

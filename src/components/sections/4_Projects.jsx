@@ -54,10 +54,11 @@ function Projects() {
       <Hero bgc={"#111827"}>
         <div className="container-mid">
           <h2 className="text-4xl font-bold text-center h-15 mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
-          max-sm:text-2xl max-sm:mb-4">
+          max-sm:text-2xl max-sm:mb-4
+          max-md:text-4xl">
             Featured Projects
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-3 max-sm:grid-cols-1 max-md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
               <div
                 key={project.title}
@@ -66,7 +67,8 @@ function Projects() {
                 <div className={`h-48 bg-gradient-to-br ${project.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-gray-300 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-xl font-bold mb-3 text-gray-300 group-hover:text-blue-400 transition-colors
+                  max-md:text-lg">
                     {project.title}
                   </h3>
                   <p className="text-gray-300 mb-4 leading-relaxed">
@@ -76,7 +78,8 @@ function Projects() {
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300"
+                        className="px-3 py-1 bg-gray-700 rounded-full text-sm text-gray-300
+                        max-md:text-xs"
                       >
                         {tech}
                       </span>

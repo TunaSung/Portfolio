@@ -7,8 +7,8 @@ function Contact() {
         <div className="container-mid text-center">
           <h2
             className="text-4xl font-bold mb-8 h-15 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
-          max-sm:text-2xl max-sm:mb-4"
-          >
+          max-sm:text-2xl max-sm:mb-4
+          max-md:text-4xl">
             Let's Work Together
           </h2>
           <p className="text-xl text-gray-300 mb-12">

@@ -54,7 +54,7 @@ function HamburgerMenu({ sectionList }) {
       {/* Start menu icon btn */}
       <button
         onClick={handleMenuOpen}
-        className="text-3xl text-[#3b82f6] max-sm:text-2xl"
+        className="text-4xl text-[#3b82f6] max-sm:text-xl"
         aria-label="Open menu"
       >
         <SlMenu />
@@ -64,7 +64,9 @@ function HamburgerMenu({ sectionList }) {
       {/* Start menu list */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div className="absolute px-4 flex flex-col top-1/3 right-0 border rounded-2xl rounded-tr-none bg-indigo-950 text-blue-300 border-blue-500/60 group" role="menu"
+          <motion.div role="menu" 
+          className="absolute px-10 flex flex-col top-1/3 right-0 border rounded-2xl rounded-tr-none bg-indigo-950 text-blue-300 border-blue-500/60 group
+          max-sm:px-4"
           initial={{ clipPath: "inset(0% 0% 100% 100%)" }} // inset(T R B L)
           animate={{ clipPath: "inset(0% 0% 0% 0%)" }}
           exit={{ clipPath: "inset(0% 0% 100% 100%)" }}
@@ -73,8 +75,8 @@ function HamburgerMenu({ sectionList }) {
             {sectionList.map((section) => (
               <a
                 key={`menu_${section}`}
-                className="text-center text-lg font-bold py-3 border-b last:border-0 group-hover:text-white
-                max-sm:text-lg"
+                className="text-center text-2xl font-bold py-5 border-b last:border-0 group-hover:text-white
+                max-sm:text-lg max-sm:py-3"
                 href={`#${section.toLowerCase()}`}
                 role="menuitem"
                 onClick={handleMenuOpen}

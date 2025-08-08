@@ -18,7 +18,7 @@
 
 /* container */
 .container-mid {
-    @apply w-[75%] max-lg:w-[90%] max-md:w-[98%] mx-auto px-4 
+    @apply w-[80%] max-lg:w-[90%] max-md:w-[98%] mx-auto px-4 
 }
 .avatar-position {
     @apply absolute -top-[15%] left-1/2 -translate-x-1/2
