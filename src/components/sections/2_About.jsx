@@ -7,9 +7,9 @@ function About() {
 
   // tech data
   const techTag = [
-    { name: "React", color: "blue" },
-    { name: "Node.js", color: "green" },
-    { name: "MySQL", color: "orange" },
+    { name: "React", color: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+    { name: "Node.js", color: "bg-green-500/20 text-green-300 border-green-500/30" },
+    { name: "MySQL", color: "bg-orange-500/20 text-orange-300 border-orange-500/30" },
   ];
 
   return (
@@ -63,7 +63,7 @@ function About() {
                 {techTag.map((skill) => (
                   <span
                     key={skill.name}
-                    className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-xl rounded-full border bg-${skill.color}-500/20 text-${skill.color}-300 border-${skill.color}-500/30`}
+                    className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-xl rounded-full border ${skill.color}`}
                   >
                     {skill.name}
                   </span>
