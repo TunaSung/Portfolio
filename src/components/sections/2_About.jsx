@@ -1,70 +1,86 @@
-import Hero from '../Hero'
-import { motion } from 'framer-motion'
-import { useMediaQuery } from "react-responsive";
+import { motion } from "framer-motion";
 
-function About(){
+import Hero from "../layouts/Hero";
+import graduateImg from "/src/assets/graduate.webp";
 
-    const isWidth768 = useMediaQuery({ minWidth: 768 });
+function About() {
 
-    return(
-        <section id='about'>
-            <Hero bgc={'#111827'}>
-                <div className='container-mid'>
-                    <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent
-                    max-sm:text-2xl max-sm:mb-8
-                    max-md:text-4xl">
-                        About Me
-                    </h2>
-                    <div className='grid grid-cols-2 max-md:grid-cols-1 max-md:gap-12'>
-                        <div className='order-1 max-md:order-0'>
-                            <motion.div className={`h-80 ${isWidth768 ? 'avatar-position' : 'flex justify-self-center self-center'} aspect-square border rounded-full bg-[url('/畢業照.jpg')] bg-cover bg-no-repeat shadow-[0px_3px_2px_rgba(250,250,250,0.5)]
-                            max-sm:h-80
-                            max-md:h-120`}
-                            animate={{ translateY: ['0%', '8%', '0%'] }}
-                            transition={{
-                                duration: 5,
-                                repeat: Infinity,
-                                ease: "easeInOut",
-                            }}
-                            >
-                            
-                            </motion.div>
-                        </div>
+  // tech data
+  const techTag = [
+    { name: "React", color: "blue" },
+    { name: "Node.js", color: "green" },
+    { name: "MySQL", color: "orange" },
+  ];
 
-                        <div className={`flex flex-col justify-center ${isWidth768 ? 'items-start' : 'items-center'} gap-8
-                            max-sm:gap-8
-                            max-md:gap-12`}>
-                            <p className='text-lg text-gray-300 leading-relaxed
-                            max-sm:text-sm
-                            max-md:text-2xl'>
-                                I'm a full-stack web developer based in Taiwan. <br />
-                                My passion for web development started in 2024 when I began experimenting with HTML and CSS.
-                                Since then, I’ve built several full-stack projects. <br /><br />
-                                I specialize in React, Node.js, MySQL and modern web technologies, always staying up-to-date with the latest trends and best practices in web development.
-                            </p>
-                            <div className='space-x-4 max-sm:space-x-5 max-md:space-x-6'>
-                                <span className='px-4 py-2 rounded-full border bg-blue-500/20 text-blue-300 border-blue-500/30
-                                max-sm:text-base max-sm:px-4 max-sm:py-2
-                                max-md:text-2xl max-md:px-6 max-md:py-3'>
-                                    React
-                                </span>
-                                <span className='px-4 py-2 rounded-full border bg-green-500/20 text-green-300 border-green-500/30
-                                max-sm:text-base max-sm:px-4 max-sm:py-2
-                                max-md:text-2xl max-md:px-6 max-md:py-3'>
-                                    Node.js
-                                </span>
-                                <span className='px-4 py-2 rounded-full border bg-orange-500/20 text-orange-300 border-orange-500/30
-                                max-sm:text-base max-sm:px-4 max-sm:py-2
-                                max-md:text-2xl max-md:px-6 max-md:py-3'>
-                                    MySQL
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Hero>
-        </section>
-    )
+  return (
+    <section id="about">
+      <Hero bgc={"#111827"}>
+        <div className="container-mid">
+
+          {/* start title */}
+          <h2 className="text-4xl md:text-[56px] lg:text-4xl text-center font-extrabold h-12 md:h-16 mb-6 bg-gradient-to-r from-[#3b82f6] to-[#c043ff] bg-clip-text text-transparent">
+            About Me
+          </h2>
+          {/* end title */}
+
+          {/* start main */}
+          <main className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-8">
+            {/* start avatar */}
+            <div className="order-1 md:order-2 flex justify-center items-center">
+              <motion.img
+                src={graduateImg}
+                className="h-80 md:h-90 lg:h-80 aspect-square border rounded-full object-cover object-top shadow-[0px_3px_2px_rgba(250,250,250,0.5)]"
+                alt="My portrait"
+                loading="lazy"
+                decoding="async"
+                animate={{ translateY: ["0%", "8%", "0%"] }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              ></motion.img>
+            </div>
+            {/* end avatar */}
+
+            {/* start content */}
+            <div className="order-2 md:order-1 flex flex-col items-center md:items-start justify-center gap-6 md:gap-4">
+
+              {/* start description */}
+              <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left">
+                I'm a full-stack web developer based in Taiwan. <br />
+                My passion for web development started in 2024 when I began
+                experimenting with HTML and CSS. Since then, I’ve built several
+                full-stack projects. <br />
+                <br />I specialize in React, Node.js, MySQL and modern web
+                technologies, always staying up-to-date with the latest trends
+                and best practices in web development.
+              </p>
+              {/* end description */}
+
+              {/* start tech tag */}
+              <div className="flex flex-wrap gap-5 justify-center md:gap-6 lg:gap-4">
+                {techTag.map((skill) => (
+                  <span
+                    key={skill.name}
+                    className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-xl rounded-full border bg-${skill.color}-500/20 text-${skill.color}-300 border-${skill.color}-500/30`}
+                  >
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
+              {/* end tech tag */}
+              
+            </div>
+            {/* end content */}
+
+          </main>
+          {/* end start */}
+
+        </div>
+      </Hero>
+    </section>
+  );
 }
 
-export default About
+export default About;

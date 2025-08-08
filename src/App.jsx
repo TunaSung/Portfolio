@@ -1,14 +1,15 @@
-import { useEffect, useState, useRef } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react'
 import { motion, useScroll, useTransform  } from 'framer-motion'
-import LoadingScreen from './components/LoadingScreen'
-import Navbar from './components/Navbar'
+
+import LoadingScreen from './components/features/LoadingScreen'
+import Navbar from './components/layouts/Navbar'
 import Home from './components/sections/1_Home'
 import About from './components/sections/2_About'
 import Skills from './components/sections/3_Skills'
 import Projects from './components/sections/4_Projects'
 import Contact from './components/sections/5_Contact'
-import Footer from './components/Footer'
+import Footer from './components/layouts/Footer'
+import './App.css'
 
 function App() {
 
