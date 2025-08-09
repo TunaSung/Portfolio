@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfolio-blue-three-i9wkudfxhn.vercel.app/sitemap.xml
