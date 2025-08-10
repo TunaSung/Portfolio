@@ -16,7 +16,7 @@ function Projects() {
       title: "E-Commerce Platform",
       description:
         "Real-time e-commerce platform with chat system and advanced product flow.",
-      tech: ["React", "Tailwind", "Node.js", "MySQL", "Socket.io", "Railway"],
+      tech: ["Tailwind", "ECPay", "Socket.io", "Desktop", "Railway"],
       imageUrl: secondProjectImg,
       demoUrl: 'https://secondproject-production.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/Second_project'
@@ -25,7 +25,7 @@ function Projects() {
       title: "E-Commerce Platform",
       description:
         "Full-stack online store with user auth, shopping cart, and payment system.",
-      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Railway"],
+      tech: ["Tailwind", "ECPay", "Desktop", "Railway"],
       imageUrl: firstProjectImg,
       demoUrl: 'https://firstproject-production-700b.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/First_project'
