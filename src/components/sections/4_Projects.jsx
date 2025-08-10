@@ -16,7 +16,7 @@ function Projects() {
       title: "E-Commerce Platform",
       description:
         "Real-time e-commerce platform with chat system and advanced product flow.",
-      tech: ["Tailwind", "ECPay", "Socket.io", "Desktop", "Railway"],
+      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Socket.io", "Desktop", "Railway"],
       imageUrl: secondProjectImg,
       demoUrl: 'https://secondproject-production.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/Second_project'
@@ -25,7 +25,7 @@ function Projects() {
       title: "E-Commerce Platform",
       description:
         "Full-stack online store with user auth, shopping cart, and payment system.",
-      tech: ["Tailwind", "ECPay", "Desktop", "Railway"],
+      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Desktop", "Railway"],
       imageUrl: firstProjectImg,
       demoUrl: 'https://firstproject-production-700b.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/First_project'
@@ -34,7 +34,7 @@ function Projects() {
       title: "Rimoo cafe",
       description:
         "Single-page café website with handcrafted HTML/CSS and responsive design.",
-      tech: ["HTML", "Responsive Design", "GitHub Pages"],
+      tech: ["HTML", "CSS", "Responsive Design", "GitHub Pages"],
       imageUrl: rimooImg,
       demoUrl: 'https://tunasung.github.io/Rimoo-cafe/',
       githubUrl: 'https://github.com/TunaSung/Rimoo-cafe'
@@ -43,7 +43,7 @@ function Projects() {
       title: "Tubame",
       description:
         "Business landing page built with React, animations, BEM CSS, and full RWD.",
-      tech: ["React", "Responsive Design", "Vercel"],
+      tech: ["React", "BEM CSS", "Responsive Design", "Vercel"],
       imageUrl: tubameImg,
       demoUrl: 'https://tubame.vercel.app/',
       githubUrl: 'https://github.com/TunaSung/Tubame'
