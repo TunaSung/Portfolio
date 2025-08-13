@@ -13,6 +13,24 @@ function Projects() {
   // projects data
   const projects = [
     {
+      title: "Portfolio",
+      description:
+        "Dark‑themed interactive portfolio with scroll animations, smooth navigation, and responsive layout.",
+      tech: ["React", "Tailwind", "Responsive Design", "Vercel"],
+      imageUrl: portfolioImg,
+      demoUrl: 'https://portfolio-blue-three-i9wkudfxhn.vercel.app/',
+      githubUrl: 'https://github.com/TunaSung/Portfolio'
+    },
+    {
+      title: "Tubame",
+      description:
+        "Business landing page built with React, animations, BEM CSS, and full RWD.",
+      tech: ["React", "BEM CSS", "Responsive Design", "Vercel"],
+      imageUrl: tubameImg,
+      demoUrl: 'https://tubame.vercel.app/',
+      githubUrl: 'https://github.com/TunaSung/Tubame'
+    },
+    {
       title: "E-Commerce Platform",
       description:
         "Real-time e-commerce platform with chat system and advanced product flow.",
@@ -38,24 +56,6 @@ function Projects() {
       imageUrl: rimooImg,
       demoUrl: 'https://tunasung.github.io/Rimoo-cafe/',
       githubUrl: 'https://github.com/TunaSung/Rimoo-cafe'
-    },
-    {
-      title: "Tubame",
-      description:
-        "Business landing page built with React, animations, BEM CSS, and full RWD.",
-      tech: ["React", "BEM CSS", "Responsive Design", "Vercel"],
-      imageUrl: tubameImg,
-      demoUrl: 'https://tubame.vercel.app/',
-      githubUrl: 'https://github.com/TunaSung/Tubame'
-    },
-    {
-      title: "Portfolio",
-      description:
-        "Dark‑themed interactive portfolio with scroll animations, smooth navigation, and responsive layout.",
-      tech: ["React", "Tailwind", "Responsive Design", "Vercel"],
-      imageUrl: portfolioImg,
-      demoUrl: 'https://portfolio-blue-three-i9wkudfxhn.vercel.app/',
-      githubUrl: 'https://github.com/TunaSung/Portfolio'
     },
   ];
 
