@@ -6,25 +6,25 @@ function Skills() {
   const skills = [
     {
       name: "React",
-      level: 85,
+      level: 80,
       color: ["#4FD1C5", "#2C7A7B"],
       subSkills: ["Hooks", "React Router", "Context API", "Component Design"],
     },
     {
       name: "Tailwind Css",
-      level: 85,
+      level: 80,
       color: ["#63B3ED", "#3182CE"],
       subSkills: ["Utility Classes", "Responsive Design", "Custom Theme"],
     },
     {
       name: "Node.js",
-      level: 83,
+      level: 75,
       color: ["#68D391", "#38A169"],
       subSkills: ["Express.js", "Middleware", "CORS"],
     },
     {
       name: "JavaScript",
-      level: 80,
+      level: 75,
       color: ["#FBBF24", "#D69E2E"],
       subSkills: ["ES6+", "DOM", "Async/Await", "Event Handling"],
     },
@@ -47,7 +47,7 @@ function Skills() {
     },
     {
       name: "DevOps",
-      level: 70,
+      level: 75,
       color: ["#F97316", "#EA580C"],
       subSkills: ["Docker", "Railway", "GitHub Actions", "Vercel"],
     },
