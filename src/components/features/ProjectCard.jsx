@@ -11,7 +11,7 @@ function ProjectCard({ project }) {
         <h3 className="text-lg md:text-xl font-bold mb-3 text-gray-300 group-hover:text-blue-400 transition-colors">
           {project.title}
         </h3>
-        <p className="text-gray-300 mb-4 leading-relaxed">
+        <p className="text-gray-300 mb-4 leading-relaxed whitespace-pre-line">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-4">

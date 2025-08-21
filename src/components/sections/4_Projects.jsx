@@ -16,7 +16,7 @@ function Projects() {
       title: "Portfolio",
       description:
         "Dark‑themed interactive portfolio with scroll animations, smooth navigation, and responsive layout.",
-      tech: ["React", "Tailwind", "Responsive Design", "Vercel"],
+      tech: ["React", "Tailwind", "Vercel", "Responsive Design"],
       imageUrl: portfolioImg,
       demoUrl: 'https://portfolio-blue-three-i9wkudfxhn.vercel.app/',
       githubUrl: 'https://github.com/TunaSung/Portfolio'
@@ -24,8 +24,8 @@ function Projects() {
     {
       title: "Tubame",
       description:
-        "Business landing page built with React, animations, BEM CSS, and full RWD.",
-      tech: ["React", "BEM CSS", "Responsive Design", "Vercel"],
+        "My first freelance project — a business landing page built with React, animations, BEM CSS, and full RWD.",
+      tech: ["React", "BEM CSS", "Vercel", "Responsive Design"],
       imageUrl: tubameImg,
       demoUrl: 'https://tubame.vercel.app/',
       githubUrl: 'https://github.com/TunaSung/Tubame'
@@ -33,8 +33,10 @@ function Projects() {
     {
       title: "E-Commerce Platform",
       description:
-        "Real-time e-commerce platform with chat system and advanced product flow.",
-      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Socket.io", "Desktop", "Railway"],
+        `A real-time e-commerce platform featuring live chat and a complete product workflow. 
+        ※ Ts refactoring for better maintainability
+        ※ Optimized for desktop view (1280px+).`,
+      tech: ["React", "TypeScript(Refactor)", "Tailwind", "Node.js", "MySQL", "ECPay", "Socket.io", "Railway"],
       imageUrl: secondProjectImg,
       demoUrl: 'https://secondproject-production.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/Second_project'
@@ -42,8 +44,9 @@ function Projects() {
     {
       title: "E-Commerce Platform",
       description:
-        "Full-stack online store with user auth, shopping cart, and payment system.",
-      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Desktop", "Railway"],
+        `Full-stack online store with user auth, shopping cart, and payment system. 
+        ※ Optimized for desktop view (1280px+).`,
+      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Railway"],
       imageUrl: firstProjectImg,
       demoUrl: 'https://firstproject-production-700b.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/First_project'
@@ -52,7 +55,7 @@ function Projects() {
       title: "Rimoo cafe",
       description:
         "Single-page café website with handcrafted HTML/CSS and responsive design.",
-      tech: ["HTML", "CSS", "Responsive Design", "GitHub Pages"],
+      tech: ["HTML", "CSS", "GitHub Pages", "Responsive Design"],
       imageUrl: rimooImg,
       demoUrl: 'https://tunasung.github.io/Rimoo-cafe/',
       githubUrl: 'https://github.com/TunaSung/Rimoo-cafe'
