@@ -36,7 +36,7 @@ function Projects() {
         `A real-time e-commerce platform featuring live chat and a complete product workflow. 
         ※ Ts refactoring for better maintainability
         ※ Optimized for desktop view (1280px+).`,
-      tech: ["React", "TypeScript(Refactor)", "Tailwind", "Node.js", "MySQL", "ECPay", "Socket.io", "Railway"],
+      tech: ["React", "Tailwind", "Node.js", "MySQL", "ECPay", "Socket.io", "Railway"],
       imageUrl: secondProjectImg,
       demoUrl: 'https://secondproject-production.up.railway.app',
       githubUrl: 'https://github.com/TunaSung/Second_project'
