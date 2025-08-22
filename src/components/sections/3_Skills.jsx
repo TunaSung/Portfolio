@@ -30,7 +30,7 @@ function Skills() {
     },
     {
       name: "MySQL",
-      level: 80,
+      level: 75,
       color: ["#0EA5E9", "#0F766E"],
       subSkills: ["Sequelize ORM"],
     },

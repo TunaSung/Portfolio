@@ -48,7 +48,7 @@ function About() {
 
               {/* start description */}
               <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left">
-                I'm a full-stack web developer based in Taiwan. <br />
+                I'm a front-end web developer based in Taiwan. <br />
                 My passion for web development started in 2024 when I began
                 experimenting with HTML and CSS. Since then, I’ve built several
                 full-stack projects. <br />
