@@ -1,7 +1,15 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+
 import Hero from "../layouts/Hero";
 import SkillCard from "../features/SkillCard";
 
 function Skills() {
+
+  useEffect(() => {
+      AOS.init({ once: false, duration: 1500, easing: 'ease-in-out' })
+    }, [])
+
   // skills data
   const skills = [
     {
@@ -74,7 +82,10 @@ function Skills() {
       <Hero bgc={"#18212F"}>
         <div className="container-mid">
           {/* start title */}
-          <h2 className="text-2xl md:text-4xl font-bold h-15 text-center mb-4 md:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 
+          data-aos='fade-up'
+          data-aos-offset='50'
+          className="text-2xl md:text-4xl font-bold h-15 text-center mb-4 md:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Skills & Technologies
           </h2>
           {/* end title */}

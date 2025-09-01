@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
+import AOS from 'aos'
 
 import Hero from "../layouts/Hero";
 import graduateImg from "/src/assets/graduate.webp";
 
 function About() {
+
+  useEffect(() => {
+    AOS.init({ once: false, duration: 1500, easing: 'ease-in-out' })
+  }, [])
 
   // tech data
   const techTag = [
@@ -18,7 +24,10 @@ function About() {
         <div className="container-mid">
 
           {/* start title */}
-          <h2 className="text-4xl md:text-[56px] lg:text-4xl text-center font-extrabold h-12 md:h-16 mb-6 bg-gradient-to-r from-[#3b82f6] to-[#c043ff] bg-clip-text text-transparent">
+          <h2
+          data-aos='fade-up'
+          data-aos-offset='50'
+          className="text-4xl md:text-[56px] lg:text-4xl text-center font-extrabold h-12 md:h-16 mb-6 bg-gradient-to-r from-[#3b82f6] to-[#c043ff] bg-clip-text text-transparent">
             About Me
           </h2>
           {/* end title */}
@@ -26,7 +35,10 @@ function About() {
           {/* start main */}
           <main className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-8">
             {/* start avatar */}
-            <div className="order-1 md:order-2 flex justify-center items-center">
+            <div 
+            data-aos='flip-right'
+            data-aos-offset='200'
+            className="order-1 md:order-2 flex justify-center items-center">
               <motion.img
                 src={graduateImg}
                 className="h-80 md:h-90 lg:h-80 aspect-square border rounded-full object-cover object-top shadow-[0px_3px_2px_rgba(250,250,250,0.5)]"
@@ -39,12 +51,15 @@ function About() {
                   repeat: Infinity,
                   ease: "easeInOut",
                 }}
-              ></motion.img>
+              />
             </div>
             {/* end avatar */}
 
             {/* start content */}
-            <div className="order-2 md:order-1 flex flex-col items-center md:items-start justify-center gap-6 md:gap-4">
+            <div
+            data-aos='fade-right'
+            data-aos-offset='150'
+            className="order-2 md:order-1 flex flex-col items-center md:items-start justify-center gap-6 md:gap-4">
 
               {/* start description */}
               <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left">

@@ -1,8 +1,13 @@
 import { motion } from 'framer-motion'
+import { useEffect } from 'react'
+import AOS from 'aos'
 
 function Home(){
+    useEffect(() => {
+        AOS.init({ duration: 1500, easing: 'ease-in-out'})
+    }, [])
     return(
-        <section id='home'>
+        <section data-aos='fade-up' id='home'>
             <header className="container-mid h-screen flex justify-center items-center bg-[#121435]">
                 <div className='text-center w-full max-w-[480px]'>
 

@@ -1,6 +1,17 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+
 function SkillCard({ skill, RADIUS, CIRCUMFERENCE, index }) {
+
+  useEffect(() => {
+    AOS.init({ once: false, duration: 500, easing: 'ease-in-out' })
+  }, [])
+    
   return (
-    <div className="text-center group">
+    <div 
+    data-aos='zoom-in'
+    data-aos-offset='50'
+    className="text-center group">
 
       {/* start circle */}
       <div className="relative w-24 h-24 mx-auto mb-4">

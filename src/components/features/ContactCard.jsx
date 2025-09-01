@@ -1,6 +1,16 @@
-function ContactCard({ label, href, icon, gradient, text, aria }) {
+import { useEffect } from "react";
+import AOS from 'aos'
+
+function ContactCard({ label, href, icon, gradient, text, aria, offset }) {
+
+  useEffect(() => {
+      AOS.init({ once: false, duration: 500, easing: 'ease-in-out' })
+    }, [])
+
   return (
     <a
+      data-aos='fade-out-up'
+      data-aos-offset={offset}
       href={href}
       target="_blank"
       rel="noopener noreferrer"

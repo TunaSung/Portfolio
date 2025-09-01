@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+
+// Layout
 import Hero from "../layouts/Hero";
 import ProjectCard from "../features/ProjectCard";
 
@@ -9,6 +13,10 @@ import tubameImg from '/src/assets/tubame.webp';
 import portfolioImg from '/src/assets/portfolio.webp';
 
 function Projects() {
+
+  useEffect(() => {
+    AOS.init({ once: false, duration: 1500, easing: 'ease-in-out' })
+  }, [])
 
   // projects data
   const projects = [
@@ -67,7 +75,10 @@ function Projects() {
         <div className="container-mid">
 
           {/* start title */}
-          <h2 className="text-2xl md:text-4xl font-bold text-center h-15 mb-4 md:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+          <h2 
+          data-aos='fade-up'
+          data-aos-offset='50'
+          className="text-2xl md:text-4xl font-bold text-center h-15 mb-4 md:mb-16 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           {/* end title */}

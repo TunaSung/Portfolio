@@ -1,6 +1,17 @@
+import { useEffect } from "react";
+import AOS from 'aos'
+
 function ProjectCard({ project }) {
+
+  useEffect(() => {
+    AOS.init({ once: false, duration: 800, easing: 'ease-in-out' })
+  }, [])
+
   return (
-    <div className="group relative bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 hover:shadow-2xl">
+    <div 
+    data-aos='zoom-in-up'
+    data-aos-offset='50'
+    className="group relative bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 hover:shadow-2xl">
       <img
         src={project.imageUrl}
         alt={`${project.title} preview`}
