@@ -4,7 +4,7 @@ import AOS from 'aos'
 import Hero from "../layouts/Hero";
 import ContactCard from "../features/ContactCard";
 import { FiMail, FiGithub } from "react-icons/fi";
-import { SiLine } from "react-icons/si";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
 
 function Contact() {
 
@@ -24,11 +24,11 @@ function Contact() {
       offset: "150"
     },
     {
-      label: "Line",
-      href: "https://line.me/ti/p/e125710020",
-      icon: <SiLine size={24} />,
+      label: "Phone Number",
+      href: "tel:0931910536",
+      icon: <MdOutlinePhoneAndroid size={24} />,
       gradient: "from-green-500 to-blue-600",
-      text: "Click to add line",
+      text: "0931-910-536",
       aria: "Add Line",
       offset: "200"
     },
