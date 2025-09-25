@@ -26,7 +26,7 @@ function Home(){
 
                     {/* start description */}
                     <p className="text-lg md:text-2xl mb-10 md:mb-12 lg:mb-8 text-gray-300 leading-relaxed">
-                        A front-end web developer who transforms creativity into code.
+                        A full stack web developer who transforms creativity into code.
                         Passionate about UI animation, real-time features, and user experience.
                         Let’s build something extraordinary together.
                     </p>
