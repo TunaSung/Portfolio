@@ -21,10 +21,10 @@ function Navbar() {
 
   return (
     <nav
-      className={`z-50 fixed top-0 right-0 w-full h-20 md:h-25 lg:h-16 transition-all duration-350
+      className={`z-50 sticky top-0 backdrop-blur-sm w-full h-20 md:h-25 lg:h-16 transition-all duration-350
             ${
               scrolled
-                ? "bg-[#0B1121] shadow-md backdrop-blur-md"
+                ? "bg-[#0B1121]/50 shadow-md backdrop-blur-md"
                 : "bg-transparent"
             }`}
     >
