@@ -6,6 +6,7 @@ import Hero from "../layouts/Hero";
 import ProjectCard from "../features/ProjectCard";
 
 // Images
+import hypothsisImg from '/src/assets/hypothesis.webp'
 import secondProjectImg from '/src/assets/secondProject.webp';
 import firstProjectImg from '/src/assets/firstProject.webp';
 import rimooImg from '/src/assets/rimoo.webp';
@@ -20,6 +21,15 @@ function Projects() {
 
   // projects data
   const projects = [
+    {
+      title: "Hypothesis Tester",
+      description:
+        "An AI-powered statistical hypothesis tester for fast and intuitive research validation.",
+      tech: ["React", "Tailwind", "TypeScript", "Responsive Design"],
+      imageUrl: hypothsisImg,
+      demoUrl: null,
+      githubUrl: 'https://github.com/TunaSung/Hypothesis-Tester'
+    },
     {
       title: "Portfolio",
       description:

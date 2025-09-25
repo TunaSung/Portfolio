@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-import AOS from 'aos'
+import AOS from "aos";
 
 function ProjectCard({ project }) {
-
   useEffect(() => {
-    AOS.init({ once: false, duration: 800, easing: 'ease-in-out' })
-  }, [])
+    AOS.init({ once: false, duration: 800, easing: "ease-in-out" });
+  }, []);
 
   return (
-    <div 
-    data-aos='zoom-in-up'
-    data-aos-offset='50'
-    className="group relative bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 hover:shadow-2xl">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-offset="50"
+      className="group relative bg-gray-800 rounded-xl overflow-hidden hover:scale-105 transform transition-all duration-300 hover:shadow-2xl"
+    >
       <img
         src={project.imageUrl}
         alt={`${project.title} preview`}
@@ -29,20 +29,32 @@ function ProjectCard({ project }) {
           {project.tech.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 bg-gray-700 rounded-full text-xs md:text-base text-gray-300">
+              className="px-3 py-1 bg-gray-700 rounded-full text-xs md:text-base text-gray-300"
+            >
               {tech}
             </span>
           ))}
         </div>
         <div className="flex gap-4 text-sm md:text-base">
-          <a
-            href={`${project.demoUrl}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition-colors cursor-pointer"
-          >
-            Live Demo →
-          </a>
+          {project.demoUrl ? (
+            <a
+              href={`${project.demoUrl}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 transition-colors cursor-pointer"
+            >
+              Live Demo →
+            </a>
+          ) : (
+            <p
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400"
+            >
+              Under development
+            </p>
+          )}
+
           <a
             href={`${project.githubUrl}`}
             target="_blank"
