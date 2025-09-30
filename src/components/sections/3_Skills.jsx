@@ -33,7 +33,13 @@ function Skills() {
     {
       name: "JavaScript",
       level: 75,
-      color: ["#FBBF24", "#D69E2E"],
+      color: ["#FBBF25", "#D69E2E"],
+      subSkills: ["ES6+", "DOM", "Async/Await", "Event Handling"],
+    },
+    {
+      name: "TypeScript",
+      level: 65,
+      color: ["#63B3ED", "#3182CE"],
       subSkills: ["ES6+", "DOM", "Async/Await", "Event Handling"],
     },
     {
