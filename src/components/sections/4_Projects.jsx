@@ -25,7 +25,7 @@ function Projects() {
       title: "Hypothesis Tester",
       description:
         "An AI-powered statistical hypothesis tester for fast and intuitive research validation.",
-      tech: ["React", "Tailwind", "TypeScript", "Responsive Design"],
+      tech: ["React", "Tailwind", "TypeScript", "Responsive Design", "Railway"],
       imageUrl: hypothsisImg,
       demoUrl: 'https://hypothesis-tester.up.railway.app/analyze',
       githubUrl: 'https://github.com/TunaSung/Hypothesis-Tester'
