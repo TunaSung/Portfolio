@@ -14,19 +14,19 @@ function Skills() {
   const skills = [
     {
       name: "React",
-      level: 80,
+      level: 85,
       color: ["#4FD1C5", "#2C7A7B"],
       subSkills: ["Hooks", "React Router", "Context API", "Component Design"],
     },
     {
       name: "Tailwind Css",
-      level: 80,
+      level: 85,
       color: ["#63B3ED", "#3182CE"],
       subSkills: ["Utility Classes", "Responsive Design", "Custom Theme"],
     },
     {
       name: "Node.js",
-      level: 75,
+      level: 80,
       color: ["#68D391", "#38A169"],
       subSkills: ["Express.js", "Middleware", "CORS"],
     },
@@ -38,19 +38,19 @@ function Skills() {
     },
     {
       name: "TypeScript",
-      level: 65,
+      level: 75,
       color: ["#63B3ED", "#3182CE"],
       subSkills: ["ES6+", "DOM", "Async/Await", "Event Handling"],
     },
     {
       name: "MySQL",
-      level: 75,
+      level: 78,
       color: ["#0EA5E9", "#0F766E"],
       subSkills: ["Sequelize ORM"],
     },
     {
       name: "UI/UX Design",
-      level: 80,
+      level: 85,
       color: ["#D8B4FE", "#A78BFA"],
       subSkills: [
         "Wireframing",
