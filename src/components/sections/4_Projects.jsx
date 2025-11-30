@@ -12,6 +12,9 @@ import firstProjectImg from '/src/assets/firstProject.webp';
 import rimooImg from '/src/assets/rimoo.webp';
 import tubameImg from '/src/assets/tubame.webp';
 import portfolioImg from '/src/assets/portfolio.webp';
+import chatbotImg from '/src/assets/chatbot.webp';
+import ideaWallImg from '/src/assets/idea-wall.webp';
+
 
 function Projects() {
 
@@ -22,10 +25,28 @@ function Projects() {
   // projects data
   const projects = [
     {
+      title: "Idea Wall",
+      description:
+        "An internal idea wall for teammates to submit and browse innovation ideas, with login, user-linked posts, and a polished Plus-style UI.",
+      tech: ["React", "Tailwind", "Supabase", "Responsive Design", "Vercel"],
+      imageUrl: ideaWallImg,
+      demoUrl: 'https://idea-wall-xi.vercel.app/',
+      githubUrl: 'https://github.com/TunaSung/Idea_Wall'
+    },
+    {
+      title: "Chatbot",
+      description:
+        "A full-stack chatbot with conversation memory, RWD chat UI, and clear API/installation docs for smart customer support.",
+      tech: ["React", "Tailwind", "TypeScript", "Node.js", "MySQL", "OpenAI", "Responsive Design", "Railway"],
+      imageUrl: chatbotImg,
+      demoUrl: 'https://chatbot-production-2f6a.up.railway.app/',
+      githubUrl: 'https://github.com/TunaSung/Chatbot'
+    },
+    {
       title: "Hypothesis Tester",
       description:
         "An AI-powered statistical hypothesis tester for fast and intuitive research validation.",
-      tech: ["React", "Tailwind", "TypeScript", "Responsive Design", "Railway"],
+      tech: ["React", "Tailwind", "TypeScript", "Node.js", "MySQL", "OpenAI", "Responsive Design", "Railway"],
       imageUrl: hypothsisImg,
       demoUrl: 'https://hypothesis-tester.up.railway.app/',
       githubUrl: 'https://github.com/TunaSung/Hypothesis-Tester'
